@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".first">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/searchbar"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="17dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchbutton"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/edit_text_bg"
+                android:text="Search"
+                android:layout_toRightOf="@+id/searchbar"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="200dp"
+                android:id="@+id/food_img"
+                android:layout_below="@+id/searchbar"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/food_name"
+                android:layout_below="@+id/food_img"
+                android:textSize="22sp"
+                android:padding="7dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/food_name"
+                android:id="@+id/food_cat"
+                android:textSize="19sp"
+                android:padding="3dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/food_cat"
+                android:id="@+id/food_inst"
+                android:textSize="15sp"
+                android:padding="5dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
