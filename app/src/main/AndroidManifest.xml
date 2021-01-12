@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ReadingRighths">
-        <activity android:name=".searchresult"></activity>
+        <activity android:name=".ShowFood"></activity>
+        <activity android:name=".searchresult" />
         <activity
             android:name=".first"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />

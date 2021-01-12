@@ -52,7 +52,7 @@ public class first extends AppCompatActivity {
         bt_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(et_search.getText().toString().length() == 0){
+                if(et_search.getText().toString().length() < 2){
                     Toast.makeText(first.this, "search string too short", Toast.LENGTH_SHORT).show();
                 }else{
                     Intent i= new Intent(first.this, searchresult.class);
