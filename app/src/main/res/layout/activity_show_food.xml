@@ -30,7 +30,7 @@
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:layout_below="@+id/food_name"
                 android:id="@+id/food_cat"
                 android:textSize="19sp"
@@ -42,9 +42,10 @@
                 android:text="Add Fav"
                 android:backgroundTint="#fff"
                 android:background="@drawable/edit_text_bg"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:id="@+id/fav"
                 android:layout_below="@+id/food_name"
+                android:layout_above="@+id/food_inst"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true" />
             <TextView

@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DataSource;
@@ -51,6 +52,7 @@ public class ShowFood extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 add_fav.setVisibility(View.INVISIBLE);
+                Toast.makeText(ShowFood.this, "Added To Favourites", Toast.LENGTH_SHORT).show();
             }
         });
     }
